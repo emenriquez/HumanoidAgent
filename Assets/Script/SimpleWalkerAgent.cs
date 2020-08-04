@@ -166,10 +166,30 @@ public class SimpleWalkerAgent : Agent
             );
         }
 
+        // c. Encourage head height. //Should normalize to ~1
+        var headHeightOverFeetReward =
+            ((Head.position.y - FootL.position.y) + (Head.position.y - FootR.position.y) / 9);
+        if (float.IsNaN(headHeightOverFeetReward))
+        {
+            throw new ArgumentException(
+                "NaN in headHeightOverFeetReward.\n" +
+                $" head.position: {Head.position}\n"+
+                $" footL.position: {FootL.position}\n"+
+                $" footR.position: {FootR.position}"
+            );
+        }
+
         AddReward(
             + 0.02f * moveTowardsTargetReward
             + 0.02f * lookAtTargetReward
+            + 0.005f * headHeightOverFeetReward
         );
+
+        // End if Agent falls off
+        if (Hips.position.y < -3) {
+            AddReward(-1f);
+            EndEpisode();
+        }
 
         currentReward = GetCumulativeReward();
     }

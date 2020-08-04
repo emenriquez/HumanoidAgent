@@ -443,9 +443,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 0}
-  agentDoneOnGroundContact: 0
-  penalizeGroundContact: 0
-  groundContactPenalty: 0
+  agentDoneOnGroundContact: 1
+  penalizeGroundContact: 1
+  groundContactPenalty: -1
   touchingGround: 0
 --- !u!1 &936811577125014371
 GameObject:
@@ -493,9 +493,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.15
-  m_Height: 1
+  m_Height: 0.9
   m_Direction: 1
-  m_Center: {x: 0.06960967, y: 0.15910757, z: -0.0059260726}
+  m_Center: {x: 0.06960967, y: 0.26, z: -0.0059260726}
 --- !u!54 &4587988508001141682
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -620,9 +620,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 0}
-  agentDoneOnGroundContact: 0
-  penalizeGroundContact: 0
-  groundContactPenalty: 0
+  agentDoneOnGroundContact: 1
+  penalizeGroundContact: 1
+  groundContactPenalty: -1
   touchingGround: 0
 --- !u!1 &1041067458085957787
 GameObject:

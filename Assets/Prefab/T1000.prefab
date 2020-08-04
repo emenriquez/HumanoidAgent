@@ -142,9 +142,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a288c4260d22b4a72a40969c15900291, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxJointSpring: 60000
-  jointDampen: 5000
-  maxJointForceLimit: 100000
+  maxJointSpring: 40000
+  jointDampen: 4000
+  maxJointForceLimit: 50000
   bodyPartsList: []
 --- !u!114 &4184472143492552974
 MonoBehaviour:
@@ -213,7 +213,7 @@ MonoBehaviour:
     VectorActionSize: 24000000
     VectorActionDescriptions: []
     VectorActionSpaceType: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: cb7db11f87edc47a69ebac8bdad44ad2, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: StaticWalker
@@ -1542,6 +1542,36 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Foot R
+      objectReference: {fileID: 0}
+    - target: {fileID: 1463231225185265269, guid: c7f2056530795406e9a72308c512e9c6,
+        type: 3}
+      propertyPath: agentDoneOnGroundContact
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1463231225185265269, guid: c7f2056530795406e9a72308c512e9c6,
+        type: 3}
+      propertyPath: penalizeGroundContact
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1463231225185265269, guid: c7f2056530795406e9a72308c512e9c6,
+        type: 3}
+      propertyPath: groundContactPenalty
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900537808066398959, guid: c7f2056530795406e9a72308c512e9c6,
+        type: 3}
+      propertyPath: agentDoneOnGroundContact
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900537808066398959, guid: c7f2056530795406e9a72308c512e9c6,
+        type: 3}
+      propertyPath: penalizeGroundContact
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2900537808066398959, guid: c7f2056530795406e9a72308c512e9c6,
+        type: 3}
+      propertyPath: groundContactPenalty
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: 7713986767318214249, guid: c7f2056530795406e9a72308c512e9c6,
         type: 3}
