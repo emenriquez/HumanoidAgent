@@ -18,7 +18,7 @@ Keras-Preprocessing==1.1.2
 Markdown==3.2.2
 mlagents==0.17.0
 mlagents-envs==0.17.0
-numpy==1.19.0
+numpy==1.22.0
 oauthlib==3.1.0
 opt-einsum==3.2.1
 Pillow==7.2.0
